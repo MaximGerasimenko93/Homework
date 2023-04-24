@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52677c82-4290-4e5e-8f6f-db120edbd378" name="Changes" comment="Примеры тестов" />
+    <list default="true" id="52677c82-4290-4e5e-8f6f-db120edbd378" name="Changes" comment="Примеры тестов">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/DiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/DiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/GameTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +26,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2OoGWj97DAJuNlCFU6k70atApGx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,13 +41,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/mvger/IdeaProjects/tests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.GameTest.testEqualResult">
+  <component name="RunManager" selected="JUnit.GameTest.testToDefineWinner">
     <configuration name="DiceImplTest.testRollWhenResultBiggerThanSix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tests" />
       <extension name="coverage">
@@ -87,11 +96,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest.testFirstPlayerWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.GameTest" />
+      <option name="METHOD_NAME" value="testFirstPlayerWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.testToDefineWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.GameTest" />
+      <option name="METHOD_NAME" value="testToDefineWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.testToDefineWinner" />
         <item itemvalue="JUnit.GameTest.testEqualResult" />
-        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.testFirstPlayerWinner" />
         <item itemvalue="JUnit.DiceImplTest.testRollWhenResultBiggerThanSix" />
+        <item itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -104,6 +147,9 @@
       <option name="presentableId" value="Default" />
       <updated>1682219558635</updated>
       <workItem from="1682219560432" duration="1984000" />
+      <workItem from="1682222997714" duration="3516000" />
+      <workItem from="1682292787911" duration="644000" />
+      <workItem from="1682342877537" duration="2518000" />
     </task>
     <task id="LOCAL-00001" summary="Примеры тестов">
       <created>1682221021057</created>

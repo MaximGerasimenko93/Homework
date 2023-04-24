@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.otus.game.DiceImpl;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DiceImplTest {
 
@@ -14,11 +14,7 @@ public class DiceImplTest {
     @DisplayName("Тест x > 6")
     public void testRollWhenResultBiggerThanSix() {
         int result = diceimpl.roll();
-        if (result > 6) {
-            System.err.println("Результат больше 6");
-        } else {
-            System.out.println("Тест пройден");
-        }
+        assertTrue(result < 6, "Результат больше 6");
     }
 
     @Test
@@ -36,7 +32,6 @@ public class DiceImplTest {
     @DisplayName("Тест x = 0")
     public void testRollWhenResultIsNotNull() {
         int result = diceimpl.roll();
-        assertNotNull(result);
-        System.err.println("Результат равен 0");
+        assertNotEquals(0, result, "Результат равен 0");
     }
 }
