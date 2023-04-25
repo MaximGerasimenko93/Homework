@@ -8,16 +8,13 @@ public class GameTest {
 
     private Dice dice = new DiceImpl();
     private GameWinnerPrinter winnerPrinter = new GameWinnerConsolePrinter();
-
     Game game = new Game(dice, winnerPrinter);
-
     Player player1 = new Player("TestName1");
     Player player2 = new Player("TestName2");
 
     @Test
     @DisplayName("Проверка на ничью")
     public void testEqualResult() {
-
         game.playGame(player1, player2);
         int resultPlayer1 = dice.roll();
         int resultPlayer2 = dice.roll();
@@ -32,13 +29,10 @@ public class GameTest {
     @Test
     @DisplayName("Проверка на победу")
     public void testToDefineWinner() {
+        game.playGame(player1, player2);
         int resultPlayer1 = dice.roll();
         int resultPlayer2 = dice.roll();
-
-        if (resultPlayer1 > resultPlayer2) {
-            winnerPrinter.printWinner(player1);
-        } else {
-            winnerPrinter.printWinner(player2);
-        }
+        Player winner = (resultPlayer1 > resultPlayer2) ? player1 : player2;
+        System.out.println(winner);
     }
 }
