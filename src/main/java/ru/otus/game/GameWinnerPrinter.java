@@ -1,6 +1,8 @@
 package ru.otus.game;
 
+import java.util.function.Supplier;
+
 public interface GameWinnerPrinter {
 
-    void printWinner(Player winner);
+    Supplier<String> printWinner(Player winner);
 }

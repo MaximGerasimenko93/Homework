@@ -4,6 +4,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.otus.game.*;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class GameTest {
 
     private Dice dice = new DiceImpl();
@@ -19,20 +21,25 @@ public class GameTest {
         int resultPlayer1 = dice.roll();
         int resultPlayer2 = dice.roll();
 
-        if (resultPlayer1 == resultPlayer2) {
-            System.err.println("Ничья! Перебросьте кубики");
-        } else {
-            System.out.println("Игра продолжается");
-        }
+        assertNotEquals(resultPlayer1, resultPlayer2, "Ничья! Перебросьте кубики");
     }
 
     @Test
-    @DisplayName("Проверка на победу")
-    public void testToDefineWinner() {
+    public void testIfFirstPlayerWinner() {
         game.playGame(player1, player2);
         int resultPlayer1 = dice.roll();
         int resultPlayer2 = dice.roll();
-        Player winner = (resultPlayer1 > resultPlayer2) ? player1 : player2;
-        System.out.println(winner);
+
+        assertTrue(resultPlayer1 > resultPlayer2, "Победа второго игрока");
+    }
+
+    @Test
+    public void testIfSecondPlayerWinner() {
+        game.playGame(player1, player2);
+        int resultPlayer1 = dice.roll();
+        int resultPlayer2 = dice.roll();
+
+        assertTrue(resultPlayer2 > resultPlayer1, "Победа первого игрока");
     }
 }
+
