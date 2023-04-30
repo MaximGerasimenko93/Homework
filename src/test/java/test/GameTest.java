@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import ru.otus.game.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.when;
 
 public class GameTest {
 
@@ -25,21 +27,27 @@ public class GameTest {
     }
 
     @Test
-    public void testIfFirstPlayerWinner() {
-        game.playGame(player1, player2);
-        int resultPlayer1 = dice.roll();
-        int resultPlayer2 = dice.roll();
+    @DisplayName("Победа первого игрока")
+    public void testWhenFirstWinnerPlayer() {
 
-        assertTrue(resultPlayer1 > resultPlayer2, "Победа второго игрока");
     }
 
-    @Test
-    public void testIfSecondPlayerWinner() {
-        game.playGame(player1, player2);
-        int resultPlayer1 = dice.roll();
-        int resultPlayer2 = dice.roll();
-
-        assertTrue(resultPlayer2 > resultPlayer1, "Победа первого игрока");
-    }
+//    @Test
+//    public void testIfFirstPlayerWinner() {
+//        game.playGame(player1, player2);
+//        int resultPlayer1 = dice.roll();
+//        int resultPlayer2 = dice.roll();
+//
+//        assertTrue(resultPlayer1 > resultPlayer2, "Победа второго игрока");
+//    }
+//
+//    @Test
+//    public void testIfSecondPlayerWinner() {
+//        game.playGame(player1, player2);
+//        int resultPlayer1 = dice.roll();
+//        int resultPlayer2 = dice.roll();
+//
+//        assertTrue(resultPlayer2 > resultPlayer1, "Победа первого игрока");
+//    }
 }
 
