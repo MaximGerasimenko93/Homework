@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52677c82-4290-4e5e-8f6f-db120edbd378" name="Changes" comment="Примеры тестов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,23 +47,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.GameTest.testWhenFirstWinnerPlayer">
-    <configuration name="DiceImplTest.testRollWhenResultBiggerThanSix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DiceImplTest" />
-      <option name="METHOD_NAME" value="testRollWhenResultBiggerThanSix" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GameTest.testWhenEqualsResult">
     <configuration name="GameTest.testEqualResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tests" />
       <extension name="coverage">
@@ -74,22 +59,6 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.GameTest" />
       <option name="METHOD_NAME" value="testEqualResult" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.testIfFirstPlayerWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.GameTest" />
-      <option name="METHOD_NAME" value="testIfFirstPlayerWinner" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,6 +80,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest.testWhenEqualsResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.GameTest" />
+      <option name="METHOD_NAME" value="testWhenEqualsResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameTest.testWhenFirstWinnerPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tests" />
       <extension name="coverage">
@@ -127,13 +112,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest.testWhenSecondWinnerPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.GameTest" />
+      <option name="METHOD_NAME" value="testWhenSecondWinnerPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.testWhenEqualsResult" />
         <item itemvalue="JUnit.GameTest.testWhenFirstWinnerPlayer" />
+        <item itemvalue="JUnit.GameTest.testWhenSecondWinnerPlayer" />
         <item itemvalue="JUnit.GameTest.testEqualResult" />
         <item itemvalue="JUnit.GameTest.testIfSecondPlayerWinner" />
-        <item itemvalue="JUnit.GameTest.testIfFirstPlayerWinner" />
-        <item itemvalue="JUnit.DiceImplTest.testRollWhenResultBiggerThanSix" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +154,8 @@
       <workItem from="1682512107731" duration="4619000" />
       <workItem from="1682521473714" duration="128000" />
       <workItem from="1682740331487" duration="843000" />
-      <workItem from="1682823939460" duration="896000" />
+      <workItem from="1682823939460" duration="4867000" />
+      <workItem from="1682834868572" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="Примеры тестов">
       <created>1682221021057</created>
